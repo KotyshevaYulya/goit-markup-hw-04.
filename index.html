@@ -22,9 +22,9 @@
             <a class="link logo" href="./index.html"><span class="header-logo">Web</span><span
                     class="header-logo2">Studio</span></a>
             <ul class="list header-list">
-                <li><a class="link header-link" href="./index.html">Студия</a></li>
-                <li><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="link header-link" href="">Контакты</a></li>
+                <li><a class="link header-link current" href="./index.html">Студия</a></li>
+                <li><a class="link header-link current" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="link header-link current" href="">Контакты</a></li>
             </ul>
         <ul class="list contact">
             <li class="icons">
@@ -48,7 +48,7 @@
        <section class="hero" >
             <div class="container container-hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-button pointer" type="button">Заказать услугу</button>
+            <button class="hero-button pointer" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -134,9 +134,22 @@
        <div class="container container-about-img">
      <h2 class="about-title2">Чем мы занимаемся</h2>
      <ul class="list">
-         <li class="about-img"><img  src="images/typing.jpg" alt="написание кода" width="370"></li>
-          <li class="about-img"><img  src="images/notebook.jpg" alt="макет" width="370"></li>
-           <li class="about-img"><img  src="images/tablet.jpg" alt="выбор цыета" width="370"></li>
+         <li class="about-img">
+                 <div class="about-img-wrap">
+                 <img  src="images/typing.jpg" alt="написание кода" width="370">
+                 <p class="about-img-top-text">Десктопные приложения</p> 
+                </div></li>
+          <li class="about-img">
+              <div class="about-img-wrap">
+                  <img  src="images/notebook.jpg" alt="макет" width="370">
+                <p class="about-img-top-text">Мобильные приложения</p>
+              </div></li>
+                  
+           <li class="about-img">
+                <div class="about-img-wrap">
+                <img  src="images/tablet.jpg" alt="выбор цыета" width="370">
+                <p class="about-img-top-text">Дизайнерские решения</p>
+            </div></li>
      </ul>
     </div>
    </section>
@@ -369,34 +382,16 @@
         </div>
     </div>
 </footer>
-    <!-- <div class="footer-item">
-        <h2 class="footer-title">присоединяйтесь</h2>
-        <ul class="footer-social-list list">
-        <li class="footer-social-item">
-            <a href=" " class="footer-social-link">
-                <svg class="footer-social-icons" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="footer-social-item">
-            <a href=" " class="footer-social-link"><svg class="footer-social-icons" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                </svg></a>
-        </li>
-        <li class="footer-social-item">
-            <a href=" " class="footer-social-link"><svg class="footer-social-icons" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                </svg></a>
-        </li>
-        <li class="footer-social-item">
-            <a href=" " class="footer-social-link"><svg class="footer-social-icons" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg></a>
-        </li>
-    </ul>
-    </div> -->
-    </footer>
+   <div class="backdrop is-hidden " data-modal>
+       <div class="modal">
+           <button type="button" class="modal-close" data-modal-close>
+               <svg class="modal-close-icon" width="11px" height="11px">
+                   <use href="./images/icons.svg#icon-close"></use> 
+               </svg>
+           </button>
+       </div>
+   </div>
+    <script src="./js/modal.js"></script>
 <!-- -------------------FOOTER---------------------- -->
 </body>
 </html>
