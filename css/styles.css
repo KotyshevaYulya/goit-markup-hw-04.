@@ -721,7 +721,7 @@ img {
   display: inline-block;
   /* position: relative; */
 }
-.flex-element:hover .flex-element-top-text {
+.flex-element-link:hover .flex-element-top-text {
   transform: translateY(0%);
 }
 .flex-element-link:hover,
