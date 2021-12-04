@@ -382,7 +382,7 @@
         </div>
     </div>
 </footer>
-<div class="backdrop " data-modal>
+<div class="backdrop" data-modal>
        <div class="modal">
            <button type="button" class="modal-close" data-modal-close>
                <svg class="modal-close-icon" width="11px" height="11px">
@@ -394,33 +394,48 @@
            <form action="#" class="modal-form">
 
                <div class="modal-fild">
-               <label class="form-input-text">Имя
+               <label class="form-input-text" for="user-name">Имя</label>
+               <div class="input-wrap">
                <input 
                type="text" 
-               name="user-name" 
+               name="user-name"
+               id="user-name" 
                class="modal-form-input"
                minlength="2"
                required>
-            </label>
+               <svg class="input-icon" width="12" height="12">
+                   <use href="./images/icons.svg#icon-person"></use>
+               </svg>
             </div>
-
+            </div>
+            
             <div class="modal-fild">
-            <label class="form-input-text">Телефон
+                <label class="form-input-text" for="user-tel">Телефон</label>
+                <div class="input-wrap">
                 <input 
                 type="tel" 
-                name="user-tel" 
+                name="user-tel"
+                id="user-tel" 
                 class="modal-form-input"
                 required>
-                </label>
+                <svg class="input-icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-modal-tel"></use>
+                </svg>
+                </div>
                 </div>
                 
                 <div class="modal-fild">
-                <label class="form-input-text">Почта 
+                <label class="form-input-text" for="user-email">Почта</label>
+                <div class="input-wrap">
                 <input 
                 type="email" 
                 name="user-email" 
+                id="user-email"
                 class="modal-form-input">
-                </label>
+                <svg class="input-icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-modal-email"></use>
+                </svg>
+            </div>
                 </div>
 
                 <div class="modal-fild">
