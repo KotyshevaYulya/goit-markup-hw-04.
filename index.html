@@ -389,8 +389,11 @@
                    <use href="./images/icons.svg#icon-close"></use> 
                </svg>
            </button>
+
            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
            <form action="#" class="modal-form">
+
+               <div class="modal-fild">
                <label class="form-input-text">Имя
                <input 
                type="text" 
@@ -399,7 +402,9 @@
                minlength="2"
                required>
             </label>
+            </div>
 
+            <div class="modal-fild">
             <label class="form-input-text">Телефон
                 <input 
                 type="tel" 
@@ -407,20 +412,24 @@
                 class="modal-form-input"
                 required>
                 </label>
+                </div>
                 
+                <div class="modal-fild">
                 <label class="form-input-text">Почта 
                 <input 
                 type="email" 
                 name="user-email" 
                 class="modal-form-input">
                 </label>
+                </div>
 
+                <div class="modal-fild">
                 <label class="form-input-text">Коментарий 
-                <textarea class="coment">
-                </textarea>
+                <textarea class="modal-form-text" placeholder="Введите текст"></textarea>
                 </label>
                 <button type="submit" class="modal-button">Отправить</button>
            </form>
+            </div>   
        </div>
    </div>
     <!-- <script src="./js/modal.js"></script> -->

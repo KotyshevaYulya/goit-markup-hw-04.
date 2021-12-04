@@ -817,7 +817,6 @@ color: #212121;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  margin-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -827,23 +826,23 @@ color: #212121;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: #757575;
-
+margin-bottom: 4px;
 } 
 
-.coment {
+.modal-form-text {
   width: 100%;
   height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-box-sizing: border-box;
-direction: none;
+  resize: none;
+  padding: 12px 16px;
 }
 
 .modal-button {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+  display: block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -858,4 +857,8 @@ direction: none;
   margin-right: auto;
   padding: 10px 55px;
 
+}
+
+.modal-fild {
+  margin-bottom: 10px;
 }
